@@ -1,87 +1,24 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
-
-/* GRID LAYOUT */
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "menu"
-    "content"
-    "sidebar"
-    "footer";
-  gap: 10px;
-  padding: 10px;
-}
-
-/* AREAS */
-.header {
-  grid-area: header;
-  background: #6a0dad;
+/* Button Styling */
+button {
+  padding: 8px 14px;
+  margin-top: 10px;
+  background-color: #6a0dad;
   color: white;
-  text-align: center;
-  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.menu {
-  grid-area: menu;
+button:hover {
+  background-color: #4b0082;
+  transform: scale(1.05);
 }
 
-.menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu li {
-  background: #33b5e5;
-  padding: 10px;
-  margin-bottom: 5px;
-  color: white;
-  text-align: center;
-}
-
-.content {
-  grid-area: content;
-  padding: 15px;
-  background: #f4f4f4;
-}
-
-.sidebar {
-  grid-area: sidebar;
-  background: #ffe4b5;
-  padding: 15px;
-}
-
-.footer {
-  grid-area: footer;
-  background: #0099cc;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-/* Responsive Image */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* MEDIA QUERY FOR TABLETS & DESKTOP */
-@media only screen and (min-width: 768px) {
-
-  .grid-container {
-    grid-template-areas:
-      "header header header"
-      "menu content sidebar"
-      "footer footer footer";
-    grid-template-columns: 1fr 2fr 1fr;
-  }
-
+/* Highlight effect when JS changes text */
+.highlight {
+  background-color: #fff3cd;
+  padding: 8px;
+  border-left: 4px solid #ff9800;
+  transition: background-color 0.5s ease;
 }
