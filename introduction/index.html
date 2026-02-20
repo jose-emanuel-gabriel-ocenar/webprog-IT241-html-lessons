@@ -1,52 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>WEBPROG IT241</title>
+  <title>WEBPROG IT241 - JEG OCENAR</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-</body>
-</html>
+
 <body>
 
-<h1>My Personal Profile Web page - JEG OCENAR</h1>
-<p>
+<div class="container-fluid p-5 bg-primary text-white text-center">
+  <h1>My Personal Profile Web Page</h1>
+  <p>JEG OCENAR | BS Information Technology</p> 
+</div>
 
-About Me<br>
-( Do not include birthdate / age / contact information)<br>
-Education / Achievements<br>
-Course <br>
-IT Experience<br>
-Hobbies & Interests<br>
-Goals In Life / Dream<br>
-Picture Gallery<br>
-<img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl with a jacket" width="500" height="600">
-</p>
+<div class="container mt-4">
 
-<div class="container-fluid mt-3">
-  <h1>Responsive Auto Layout Columns</h1>
-  <p>In Bootstrap 5, there is an easy way to create equal width columns: just use the <code>.col-md</code> class.</p>
-  <p>If the screen size is <strong>less than 768px</strong>, the columns will stack horizontally.</p>
+  <div class="row">
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md bg-primary text-white">1 of 2</div>
-      <div class="col-md bg-dark text-white">2 of 2</div>
+    <!-- About Me -->
+    <div class="col-md-4">
+      <h3>About Me</h3>
+      <p>A motivated IT student passionate about web development and technology.</p>
+    </div>
+
+    <!-- Education -->
+    <div class="col-md-4">
+      <h3>Education / Achievements</h3>
+      <p>Bachelor of Science in Information Technology.</p>
+      <p>Completed academic projects in web development.</p>
+    </div>
+
+    <!-- IT Experience -->
+    <div class="col-md-4">
+      <h3>IT Experience</h3>
+      <p>Basic knowledge in HTML, CSS, Bootstrap, and Java programming.</p>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div class="row">
+
+    <!-- Hobbies -->
+    <div class="col-md-6">
+      <h3>Hobbies & Interests</h3>
+      <ul>
+        <li>Gaming</li>
+        <li>Coding</li>
+        <li>Watching tech tutorials</li>
+      </ul>
+    </div>
+
+    <!-- Goals -->
+    <div class="col-md-6">
+      <h3>Goals In Life</h3>
+      <p>To become a successful IT professional and software developer.</p>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <!-- Picture Gallery -->
+  <div class="row text-center">
+    <h3>Picture Gallery</h3>
+    <div class="col-md-4">
+      <img src="https://www.w3schools.com/html/img_girl.jpg" class="img-fluid rounded" alt="Profile Picture">
+    </div>
+    <div class="col-md-4">
+      <img src="https://www.w3schools.com/html/img_girl.jpg" class="img-fluid rounded" alt="Profile Picture">
+    </div>
+    <div class="col-md-4">
+      <img src="https://www.w3schools.com/html/img_girl.jpg" class="img-fluid rounded" alt="Profile Picture">
     </div>
   </div>
-  <br>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md bg-primary text-white">1 of 4</div>
-      <div class="col-md bg-dark text-white">2 of 4</div>
-      <div class="col-md bg-primary text-white">3 of 4</div>
-      <div class="col-md bg-dark text-white">4 of 4</div>
-    </div>
-  </div>
+</div>
+
+<div class="container-fluid bg-dark text-white text-center p-3 mt-4">
+  <p>© 2026 JEG OCENAR | WEBPROG IT241</p>
 </div>
 
 </body>
