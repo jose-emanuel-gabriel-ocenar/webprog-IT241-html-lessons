@@ -24,7 +24,11 @@
 
   <div class="content">
     <h2>About Me</h2>
-    <p>A motivated IT student passionate about technology and web development.</p>
+    <p id="aboutText">
+      A motivated IT student passionate about technology and web development.
+    </p>
+
+    <button onclick="changeAbout()">Click to Learn More</button>
 
     <h2>Education / Achievements</h2>
     <p>Bachelor of Science in Information Technology.</p>
@@ -48,19 +52,10 @@
   </div>
 
   <div class="footer">
-    <p>© 2026 JEG OCENAR | Responsive Web Design</p>
+    <p>© <span id="year"></span> JEG OCENAR | Responsive Web Design</p>
   </div>
 
 </div>
-
-<h2>Demo External JavaScript</h2>
-
-<p id="demo">A Paragraph.</p>
-
-<button type="button" onclick="myFunction()">Try it</button>
-
-<p>This example links to "myScript.js".</p>
-<p>(myFunction is stored in "myScript.js")</p>
 
 <script src="js/myScript.js"></script>
 
